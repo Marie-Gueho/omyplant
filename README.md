@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# O'My Plant! (front)
+https://o-my-plant.surge.sh
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Projet de fin de formation
 
-## Available Scripts
+### Application web destinée à la gestion des plantes d'intérieur et de balcon.
 
-In the project directory, you can run:
+Base de données participative, l'utilisateur peut choisir dans la BDD les plantes qu'il possède et les ajouter à son jardin. 
+Si la plante recherchée n'existe pas encore, il peut la rajouter dans la BDD  en renseignant son nom commun, en ajoutant une photo et une description.
+Lors de l'ajout d'une plante dans son espace 'Mon jardin", il récupère les informations de base (nom commun, photo, description) de la plante et de nouveaux champs sont débloqués afin de personnaliser les informations liés à sa plante (surnom, photo, fréquence d'arrosage, emplacement, exposition, taille, rempotage). Ces informations lui sont personnelles et n'impactent pas la BDD. La table plante liée à l'utilisateur héritant des informations de la table plante de la BDD, cette dernière n'est pas modifiée.
+Cette première version permet à l'utilisateur enregistrer ses plantes dans son espace 'Mon jardin', il peut ainsi gérer l'ensemble de ses plantes et l'entretien propre à chacune.
 
-### `npm start`
+Dans une version ultérieure, nous souhaitons impléter:
+- un **espace admin** qui permettrait entre autre de **modérer** la BDD en supprimant ou modifiant une plante si les informations renseignées ou la photo choisie ne sont pas correctes.
+- un **système de rappel** pour les arrosages avec l'implémentation de l'**API Google Calendar** afin de permettre à l'utilisateur, s'il le souhaite, d'ajouter des rappels sur son calendrier.
+- **gagner en niveau**: à chaque ajout d’un certain nombre de plantes dans la BDD du site, il atteint un palier qui lui délivre un badge: planteur débutant, ami des plantes : 20, main verte : 50
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Projet réalisé en équipe de 5 (3 front et 2 back) pendant 1 mois.
+- 
+- **semaine 1** : Réalisation du cahier des charges
+              - MVP
+              - User stories
+              - Liste des technos
+              - MCD/MLD
+              - Maquette (avec Figma)
 
-### `npm test`
+- **semaine 2 et 3** : Développement
+- **semaine 4** : Débug et présentation du projet
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### TECHNOS:
+- React (-dom, -player, -redux, -router-dom, -scripts)
+- Axios
+- Prop-types
+- Cloudinary
+- Redux
+- Material UI
+- Sass
+- Surge
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![o'my plant](https://res.cloudinary.com/piaeonia/image/upload/v1644741334/portfolio/xiwvqvuddql0r58uevpz.png)
