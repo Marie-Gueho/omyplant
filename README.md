@@ -28,7 +28,7 @@ Projet réalisé en équipe de 5 (3 front et 2 back) pendant 1 mois.
 - **semaine 2 et 3** : Développement
 - **semaine 4** : Débug et présentation du projet
 
-### TECHNOS:
+### TECHNOS côté front:
 - React (-dom, -player, -redux, -router-dom, -scripts)
 - Axios
 - Prop-types
